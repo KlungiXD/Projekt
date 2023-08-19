@@ -1,8 +1,8 @@
 package org.example;
 
 public class Pravokutnik extends GeometrijskiLik{
-    double stranicaA;
-    double stranicaB;
+    private double stranicaA;
+    private double stranicaB;
 
     public Pravokutnik(String boja, double stranicaA, double stranicaB){
         super(boja);

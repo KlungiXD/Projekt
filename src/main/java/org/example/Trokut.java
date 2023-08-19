@@ -1,8 +1,8 @@
 package org.example;
 
 public class Trokut extends GeometrijskiLik{
-    double baza;
-    double visina;
+    private double baza;
+    private double visina;
 
     public Trokut(String boja, double baza, double visina){
         super(boja);
