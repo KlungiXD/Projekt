@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Drugi geometrijski lik:");
         System.out.println("Boja: " + lik2.getBoja() + "   " + "Povrsina: " + lik2.getPovrsina());
 
-        System.out.println("Prvi geometrijski lik:");
+        System.out.println("Treci geometrijski lik:");
         System.out.println("Boja: " + lik3.getBoja() + "   " + "Povrsina: " + lik3.getPovrsina());
     }
 }
