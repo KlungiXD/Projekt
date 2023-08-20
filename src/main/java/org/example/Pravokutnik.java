@@ -1,5 +1,7 @@
 package org.example;
 
+import java.math.BigDecimal;
+
 public class Pravokutnik extends GeometrijskiLik{
     private double stranicaA;
     private double stranicaB;
@@ -12,5 +14,15 @@ public class Pravokutnik extends GeometrijskiLik{
     @Override
     public double getPovrsina() {
         return stranicaB * stranicaB;
+    }
+
+    @Override
+    public BigDecimal getCijena() {
+        return super.getCijena();
+    }
+
+    @Override
+    public boolean getRaspolozivost() {
+        return super.getRaspolozivost();
     }
 }

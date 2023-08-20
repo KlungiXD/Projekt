@@ -23,5 +23,10 @@ public class Main {
 
         System.out.println("Torba 2");
         System.out.println("Boja: " + velikaTorba.getBoja() + ", Velicina: " + velikaTorba.getVelicina() + " litara," + " Cijena : " + velikaTorba.getCijena() + " eura");
+
+        WebShopArtikl mojArtikl1 = new Trokut("crna", 2.10, 3.08);
+
+        Trokut trokutIzArtikla = (Trokut)mojArtikl1;
+
     }
 }

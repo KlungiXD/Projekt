@@ -2,7 +2,7 @@ package org.example;
 
 import java.math.BigDecimal;
 
-public abstract class Torba {
+public abstract class Torba implements WebShopArtikl{
 
     private double velicina; // izrazena  u litrama
     private String boja;
@@ -14,6 +14,7 @@ public abstract class Torba {
         this.velicina = velicina;
         this.cijena = cijena;
     }
+
     public double getVelicina() {
         return velicina;
     }
@@ -24,5 +25,10 @@ public abstract class Torba {
 
     public BigDecimal getCijena() {
         return cijena;
+    }
+
+    @Override
+    public boolean getRaspolozivost() {
+        return false;
     }
 }

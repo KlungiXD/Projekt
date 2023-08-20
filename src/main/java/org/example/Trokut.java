@@ -1,5 +1,7 @@
 package org.example;
 
+import java.math.BigDecimal;
+
 public class Trokut extends GeometrijskiLik{
     private double baza;
     private double visina;
@@ -12,6 +14,16 @@ public class Trokut extends GeometrijskiLik{
     @Override
     public double getPovrsina() {
         return baza * visina;
+    }
+
+    @Override
+    public BigDecimal getCijena() {
+        return super.getCijena();
+    }
+
+    @Override
+    public boolean getRaspolozivost() {
+        return super.getRaspolozivost();
     }
 
     @Override

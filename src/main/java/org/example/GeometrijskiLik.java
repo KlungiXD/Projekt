@@ -1,14 +1,28 @@
 package org.example;
 
-public abstract class GeometrijskiLik {
+import java.math.BigDecimal;
+
+public abstract class GeometrijskiLik implements WebShopArtikl{
     private String boja;
+    private BigDecimal cijena;
+
     public GeometrijskiLik(String boja){
         this.boja = boja;
     }
-    public GeometrijskiLik(){}
     public String getBoja() {
         return boja;
     }
+    public BigDecimal getCijena() {
+        return cijena;
+    }
+    public void setCijena(BigDecimal cijena) {
+        this.cijena = cijena;
+    }
 
     public abstract double getPovrsina();
+
+    @Override
+    public boolean getRaspolozivost() {
+        return false;
+    }
 }
