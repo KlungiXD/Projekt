@@ -2,15 +2,24 @@ package org.example;
 
 import java.math.BigDecimal;
 
-public class Pravokutnik extends GeometrijskiLik{
+public class Pravokutnik extends GeometrijskiLik implements WebShopArtikl{
     private double stranicaA;
     private double stranicaB;
+
 
     public Pravokutnik(String boja, double stranicaA, double stranicaB){
         super(boja);
         this.stranicaA = stranicaA;
         this.stranicaB = stranicaB;
     }
+    public Pravokutnik(String boja, double stranicaA, double stranicaB, BigDecimal cijena){
+        super(boja, cijena);
+        this.stranicaA = stranicaA;
+        this.stranicaB = stranicaB;
+    }
+
+
+
     @Override
     public double getPovrsina() {
         return stranicaB * stranicaB;

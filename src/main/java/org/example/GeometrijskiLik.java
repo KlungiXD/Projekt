@@ -6,6 +6,11 @@ public abstract class GeometrijskiLik implements WebShopArtikl{
     private String boja;
     private BigDecimal cijena;
 
+    public GeometrijskiLik(String boja, BigDecimal cijena){
+        this.boja = boja;
+        this.cijena = cijena;
+    }
+
     public GeometrijskiLik(String boja){
         this.boja = boja;
     }

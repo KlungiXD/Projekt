@@ -49,11 +49,30 @@ public class Main {
         listaLikova.add(trokut3);
         listaLikova.add(trokut4);
 
-        int i = 1;
-        int j = 1;
+        int brojac1 = 1;
+
         for (var GeometrijskiLikovi: listaLikova) {
-            System.out.println("Boja " + i + ". lika:" + GeometrijskiLikovi.getBoja());
-            i++;
+            System.out.println("Boja " + brojac1 + ". lika:" + GeometrijskiLikovi.getBoja());
+            brojac1++;
+        }
+
+
+        ArrayList<WebShopArtikl>webShop = new ArrayList<>();
+
+        Pravokutnik pravokutnik5 = new Pravokutnik("zelena", 2.2, 4.5, new BigDecimal("22"));
+        Trokut trokut5 = new Trokut("naračasta", 2.2, 4.5, new BigDecimal("13.7"));
+        TorbaZaPlazu torba3 = new TorbaZaPlazu("siva", 5, new BigDecimal("19.75"));
+        TorbaZaPlac torbaPlac = new TorbaZaPlac("krem", 2.2, new BigDecimal("29.5"));
+
+        webShop.add(pravokutnik5);
+        webShop.add(trokut5);
+        webShop.add(torba3);
+        webShop.add(torbaPlac);
+
+        int brojac2 = 1;
+        for ( var WebShopArtikl: webShop) {
+            System.out.println("Cijena :" + brojac2 + ". artikla: " + WebShopArtikl.getCijena() +" €");
+            brojac2++;
         }
 
     }
