@@ -2,6 +2,8 @@ package org.example;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -74,6 +76,21 @@ public class Main {
             System.out.println("Cijena :" + brojac2 + ". artikla: " + WebShopArtikl.getCijena() +" €");
             brojac2++;
         }
+
+        Set<GeometrijskiLik> likoviSet = new HashSet<>();
+
+
+        Pravokutnik pravokutnik6 = new Pravokutnik("crna", 3.3, 5.5);
+        Pravokutnik pravokutnik7 = new Pravokutnik("smeđa", 6.6, 7.8);
+        Pravokutnik pravokutnik8 = new Pravokutnik("crna", 3.3, 5.5);
+
+        likoviSet.add(pravokutnik6);
+        likoviSet.add(pravokutnik7);
+        likoviSet.add(pravokutnik8);
+
+        System.out.println(pravokutnik6.equals(pravokutnik8));
+
+
 
     }
 }

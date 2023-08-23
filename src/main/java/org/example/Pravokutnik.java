@@ -19,6 +19,13 @@ public class Pravokutnik extends GeometrijskiLik implements WebShopArtikl{
     }
 
 
+    public double getStranicaB() {
+        return stranicaB;
+    }
+
+    public double getStranicaA() {
+        return stranicaA;
+    }
 
     @Override
     public double getPovrsina() {
