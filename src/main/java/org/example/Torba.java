@@ -2,29 +2,30 @@ package org.example;
 
 import java.math.BigDecimal;
 
-public abstract class GeometrijskiLik implements WebShopArtikl{
+public abstract class Torba implements WebShopArtikl{
+
+    private double velicina; // izrazena  u litrama
     private String boja;
     private BigDecimal cijena;
 
-    public GeometrijskiLik(String boja, BigDecimal cijena){
+
+    public Torba(String boja, double velicina, BigDecimal cijena){
         this.boja = boja;
+        this.velicina = velicina;
         this.cijena = cijena;
     }
 
-    public GeometrijskiLik(String boja){
-        this.boja = boja;
+    public double getVelicina() {
+        return velicina;
     }
+
     public String getBoja() {
         return boja;
     }
+
     public BigDecimal getCijena() {
         return cijena;
     }
-    public void setCijena(BigDecimal cijena) {
-        this.cijena = cijena;
-    }
-
-    public abstract double getPovrsina();
 
     @Override
     public boolean getRaspolozivost() {
