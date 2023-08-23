@@ -25,4 +25,5 @@ public class Pravokutnik extends GeometrijskiLik{
     public boolean getRaspolozivost() {
         return super.getRaspolozivost();
     }
+
 }

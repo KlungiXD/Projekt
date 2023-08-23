@@ -1,6 +1,7 @@
 package org.example;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,6 +28,33 @@ public class Main {
         WebShopArtikl mojArtikl1 = new Trokut("crna", 2.10, 3.08);
 
         Trokut trokutIzArtikla = (Trokut)mojArtikl1;
+
+        ArrayList<GeometrijskiLik>listaLikova = new ArrayList<>();
+
+        Pravokutnik pravokutnik2 = new Pravokutnik("žuta", 2.35, 5.68);
+        Pravokutnik pravokutnik3 = new Pravokutnik("smeđa", 7.35, 9.68);
+        Pravokutnik pravokutnik4 = new Pravokutnik("crna", 11.35, 14.68);
+
+
+        Trokut trokut2 = new Trokut("roza", 2.35, 5.68);
+        Trokut trokut3 = new Trokut("ljubičasta", 7.35, 9.68);
+        Trokut trokut4 = new Trokut("crvena", 11.35, 14.68);
+
+
+        listaLikova.add(pravokutnik2);
+        listaLikova.add(pravokutnik3);
+        listaLikova.add(pravokutnik4);
+
+        listaLikova.add(trokut2);
+        listaLikova.add(trokut3);
+        listaLikova.add(trokut4);
+
+        int i = 1;
+        int j = 1;
+        for (var GeometrijskiLikovi: listaLikova) {
+            System.out.println("Boja " + i + ". lika:" + GeometrijskiLikovi.getBoja());
+            i++;
+        }
 
     }
 }
