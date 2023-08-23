@@ -42,4 +42,12 @@ public class Pravokutnik extends GeometrijskiLik implements WebShopArtikl{
         return super.getRaspolozivost();
     }
 
+    public String getBoja(){
+        return super.getBoja();
+    }
+
+    @Override
+    public String toString() {
+        return " Stranica A: " + stranicaA + ", Stranica B: " + stranicaB + ", Cijena: " + getCijena() + " eur";
+    }
 }

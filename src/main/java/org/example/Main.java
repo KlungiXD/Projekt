@@ -1,9 +1,7 @@
 package org.example;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -90,6 +88,16 @@ public class Main {
 
         System.out.println(pravokutnik6.equals(pravokutnik8));
 
+
+        Map<String, WebShopArtikl> mapaArtikala = new HashMap<>();
+
+        for(WebShopArtikl artikl : webShop){
+            mapaArtikala.put(artikl.getBoja(), artikl);
+        }
+
+        for (Map.Entry<String, WebShopArtikl> entry : mapaArtikala.entrySet()) {
+            System.out.println("Boja: " + entry.getKey() + ", Artikl: " + entry.getValue());
+        }
 
 
     }

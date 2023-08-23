@@ -35,6 +35,11 @@ public class Trokut extends GeometrijskiLik implements WebShopArtikl{
 
     @Override
     public String getBoja() {
-        return "Boja trokuta je: " + super.getBoja();
+        return super.getBoja();
+    }
+
+    @Override
+    public String toString() {
+            return "  Baza:" + baza + ", Visina: " + visina + ", Cijena: " + getCijena() + " eur";
     }
 }
